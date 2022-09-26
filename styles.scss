@@ -1,0 +1,37 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap');
+$font-family-base: 'Dancing Script', cursive;
+
+$color: #cf649a;
+$dark: #363535;
+
+$theme-colors: ( "color": $color, 
+"dark": $dark ) !default;
+
+
+@import "node_modules/bootstrap/scss/bootstrap";
+@import "node_modules/bootstrap/scss/functions";
+@import "node_modules/bootstrap/scss/navbar";
+@import "node_modules/bootstrap/scss/button-group";
+
+
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    
+}
+
+
+.card {
+    background-color: $dark;
+
+}
+
+.card{
+    @extend .card;
+}
+
